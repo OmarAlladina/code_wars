@@ -1,0 +1,14 @@
+function countBy(x, n) {
+ var z = []; //establish blank array as required
+ 
+ 
+ /*create loop: 
+ 1. set statement 1 equal to the x multilple (starting point for the array)
+ 2. set statement 2 to iterate the length of the given list multiplied by the multiple plus 1 to offset the zero index
+ 3. set statement 3 to iterate equivalent to the multiple
+ */
+ 
+ for (var i = x ; i<n*x+1;i+=x)
+  z.push(i); //push the iterated values to an array
+  return z; //return the "z" array
+}
