@@ -1,0 +1,7 @@
+function even_or_odd(number) {
+  if (number = 0 || Number.isInteger(number/2)) {
+  return "Even";
+} else {
+return "Odd";
+}
+}
