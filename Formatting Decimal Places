@@ -1,0 +1,31 @@
+function twoDecimalPlaces(n) {
+ var newString = n.toString();
+ var decimalPlace = newString.indexOf(".",0);
+ 
+
+ if (newString.charAt(decimalPlace + 3) >= 5 && newString.charAt(decimalPlace + 2) <= 8)  {
+ 
+var roundUpText = newString.charAt(decimalPlace + 2);
+var roundUpFloat = parseFloat(roundUpText) + 1
+roundUpFloat.toString();
+return parseFloat(newString.slice(0, decimalPlace + 2) + (roundUpFloat));
+
+}
+
+else if (newString.charAt(decimalPlace + 3) >= 5 && newString.charAt(decimalPlace + 2) == 9) {
+
+roundUpText = newString.charAt(decimalPlace + 1);
+roundUpFloat = parseFloat(roundUpText) + 1;
+roundUpFloat.toString();
+return parseFloat(newString.slice(0, decimalPlace + 1) + (roundUpFloat));
+
+} else {
+
+ 
+return parseFloat(newString.slice(0, decimalPlace + 3)); 
+ 
+ 
+ }
+ 
+ 
+}
