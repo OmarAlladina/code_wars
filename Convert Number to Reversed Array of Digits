@@ -1,0 +1,10 @@
+function digitize(n) {
+
+var digits = n.toString().split("");
+
+var realDigits = digits.map(Number);
+
+return realDigits.reverse();
+
+
+}
