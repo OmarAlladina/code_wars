@@ -1,0 +1,8 @@
+function getMiddle(s){
+ if (Number.isInteger(s.length/2)) {
+return s.charAt(s.length * .5 - 1) + s.charAt(s.length * .5) ;
+} else {
+return s.charAt(s.length * .5);
+}
+
+}
