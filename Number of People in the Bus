@@ -1,0 +1,20 @@
+var number = function(busStops){
+var arr_on = [];
+var arr_off = []; 
+ 
+for ( var x = 0; x<busStops.length; x++) {
+  arr_on.push( busStops[x][0])
+  }
+  var total_on = arr_on.reduce(function(a,b) {
+   return a + b;
+ });
+
+for ( var x = 0; x<busStops.length; x++) {
+  arr_off.push( busStops[x][1])
+  }
+  var total_off = arr_off.reduce(function(a,b) {
+   return a + b;
+ });
+
+return total_on - total_off;
+}
