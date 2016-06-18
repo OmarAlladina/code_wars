@@ -1,0 +1,16 @@
+function positiveSum(arr) {
+
+var filtered = arr.filter(function(value) {
+return value > 0;
+});
+
+if (filtered.length <= 0) {
+return 0;
+} else {
+
+var total = filtered.reduce(function(a,b) {
+return a + b; 
+});
+return total;
+}
+}
