@@ -1,0 +1,4 @@
+function shortenToDate(longDate) {
+  var commaLocation = longDate.indexOf(",");
+ return longDate.substring(0, commaLocation);
+}
